@@ -26,9 +26,9 @@ const userSchema = mongoose.Schema({
     token: {
         type: String
     },
-    tokenExp: {
+    tokenExp: { //token 사용기간
         type: Number
-    }, //token 사용기간
+    }, 
 })
 
 const User = mongoose.model('User', userSchema);
